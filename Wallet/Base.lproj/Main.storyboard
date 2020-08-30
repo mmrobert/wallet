@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="8FG-bI-Xg4">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Authentication-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="Authentication" id="BYZ-38-t0r" customClass="AuthViewController" customModule="Wallet" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="lie-ZM-JjK"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1056.8" y="122.78860569715144"/>
+        </scene>
+        <!--Log In-->
+        <scene sceneID="P2D-h6-1vc">
+            <objects>
+                <viewController storyboardIdentifier="LoginSB" automaticallyAdjustsScrollViewInsets="NO" id="Q0Y-em-uVk" customClass="LoginVC" customModule="Wallet" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9JL-3y-RMk"/>
+                        <viewControllerLayoutGuide type="bottom" id="0hK-WG-eJD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HWw-SS-wqp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oGz-kg-pxe">
+                                <rect key="frame" x="36" y="99" width="303" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vjc-6A-u4s">
+                                <rect key="frame" x="46" y="153" width="283" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RT8-ya-CiT">
+                                <rect key="frame" x="96" y="221" width="183" height="36"/>
+                                <color key="backgroundColor" red="0.13530815972222221" green="0.72743055555555558" blue="0.13715277777777779" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="OK">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vjc-6A-u4s" firstAttribute="leading" secondItem="HWw-SS-wqp" secondAttribute="leadingMargin" constant="30" id="6iz-9N-gXo"/>
+                            <constraint firstItem="RT8-ya-CiT" firstAttribute="leading" secondItem="HWw-SS-wqp" secondAttribute="leadingMargin" constant="80" id="Cnj-xY-hP8"/>
+                            <constraint firstItem="vjc-6A-u4s" firstAttribute="top" secondItem="oGz-kg-pxe" secondAttribute="bottom" constant="30" id="KRv-zU-xCf"/>
+                            <constraint firstItem="oGz-kg-pxe" firstAttribute="top" secondItem="9JL-3y-RMk" secondAttribute="bottom" constant="35" id="NlV-t3-trl"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="vjc-6A-u4s" secondAttribute="trailing" constant="30" id="ceQ-Bm-YS7"/>
+                            <constraint firstItem="oGz-kg-pxe" firstAttribute="leading" secondItem="HWw-SS-wqp" secondAttribute="leadingMargin" constant="20" id="fmm-pp-vIL"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="oGz-kg-pxe" secondAttribute="trailing" constant="20" id="i6t-j3-xpP"/>
+                            <constraint firstItem="RT8-ya-CiT" firstAttribute="top" secondItem="vjc-6A-u4s" secondAttribute="bottom" constant="38" id="pGp-gG-Tph"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="RT8-ya-CiT" secondAttribute="trailing" constant="80" id="qSn-vP-2uG"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Log In" id="mH5-Dc-sdk"/>
+                    <connections>
+                        <outlet property="okBtn" destination="RT8-ya-CiT" id="LqS-ie-yHv"/>
+                        <outlet property="passwordTX" destination="vjc-6A-u4s" id="Rpr-fs-aOT"/>
+                        <outlet property="remindL" destination="oGz-kg-pxe" id="Ltx-bO-2wQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ML9-Kj-Z0Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2788" y="122.78860569715144"/>
+        </scene>
+        <!--Face Picture-->
+        <scene sceneID="0VQ-5I-oaJ">
+            <objects>
+                <viewController title="Face Picture" id="fcc-nq-sFt" customClass="FacePictureVC" customModule="Wallet" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bD3-ke-5br"/>
+                        <viewControllerLayoutGuide type="bottom" id="eM1-FE-PUm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fcg-bM-PKS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user" translatesAutoresizingMaskIntoConstraints="NO" id="9Xq-Di-BDq" customClass="CircularImageView" customModule="Wallet" customModuleProvider="target">
+                                <rect key="frame" x="97" y="124" width="180" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="DTk-zc-CFw"/>
+                                    <constraint firstAttribute="width" secondItem="9Xq-Di-BDq" secondAttribute="height" multiplier="1:1" id="oZ1-vc-jY3"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="flt-2f-lib">
+                                <rect key="frame" x="76" y="354" width="223" height="36"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="DL Barcode Reader">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8h0-IR-a1w">
+                                <rect key="frame" x="96" y="440" width="183" height="36"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Upload">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9Xq-Di-BDq" firstAttribute="centerX" secondItem="fcg-bM-PKS" secondAttribute="centerX" id="4o8-6w-mq3"/>
+                            <constraint firstItem="8h0-IR-a1w" firstAttribute="leading" secondItem="fcg-bM-PKS" secondAttribute="leadingMargin" constant="80" id="7vX-A7-8sv"/>
+                            <constraint firstItem="flt-2f-lib" firstAttribute="leading" secondItem="fcg-bM-PKS" secondAttribute="leadingMargin" constant="60" id="83d-N6-Pyx"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="8h0-IR-a1w" secondAttribute="trailing" constant="80" id="9qB-CB-Fax"/>
+                            <constraint firstItem="flt-2f-lib" firstAttribute="top" secondItem="9Xq-Di-BDq" secondAttribute="bottom" constant="50" id="duf-WD-3xh"/>
+                            <constraint firstItem="9Xq-Di-BDq" firstAttribute="top" secondItem="bD3-ke-5br" secondAttribute="bottom" constant="60" id="ex9-Fb-8e4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="flt-2f-lib" secondAttribute="trailing" constant="60" id="kW1-Cp-WNs"/>
+                            <constraint firstItem="8h0-IR-a1w" firstAttribute="top" secondItem="flt-2f-lib" secondAttribute="bottom" constant="50" id="wOr-CY-FD7"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="6gs-G0-fsr"/>
+                    <connections>
+                        <outlet property="barcodeReaderBtn" destination="flt-2f-lib" id="hEl-Ua-8dc"/>
+                        <outlet property="photoImgView" destination="9Xq-Di-BDq" id="0NU-GW-NQb"/>
+                        <outlet property="uploadBtn" destination="8h0-IR-a1w" id="JiZ-cY-Gaa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="60Q-Be-Gd8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4576.8000000000002" y="127.28635682158921"/>
+        </scene>
+        <!--N V C for Auth-->
+        <scene sceneID="vhP-NV-6ae">
+            <objects>
+                <navigationController title="N V C for Auth" automaticallyAdjustsScrollViewInsets="NO" id="8FG-bI-Xg4" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="XC4-bz-8T5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="me8-du-7Cd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Eat-UB-hvR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="776.76161919040487"/>
+        </scene>
+        <!--N V C for Log In-->
+        <scene sceneID="1rX-oD-Zyi">
+            <objects>
+                <navigationController storyboardIdentifier="NVLoginSB" title="N V C for Log In" automaticallyAdjustsScrollViewInsets="NO" id="SaJ-fu-Ueo" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ygt-7o-pSV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Q0Y-em-uVk" kind="relationship" relationship="rootViewController" id="ULb-B3-hQk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5wh-xJ-dya" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1848.8" y="122.78860569715144"/>
+        </scene>
+        <!--N V C for Face Picture-->
+        <scene sceneID="tOD-4h-2ch">
+            <objects>
+                <navigationController storyboardIdentifier="NVFacePictureSB" title="N V C for Face Picture" automaticallyAdjustsScrollViewInsets="NO" id="s0J-MW-r9H" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5Oe-BI-AlI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="fcc-nq-sFt" kind="relationship" relationship="rootViewController" id="QfL-8d-0uB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rhe-NS-gDu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3637.5999999999999" y="127.28635682158921"/>
+        </scene>
+        <!--Service List-->
+        <scene sceneID="re6-eW-mcc">
+            <objects>
+                <collectionViewController title="Service List" id="eka-b9-iT3" customClass="ServiceListVC" customModule="Wallet" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="8T3-BP-3k2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="IMz-wT-HBF">
+                            <size key="itemSize" width="200" height="200"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ServiceItem" id="9du-Pd-P5d" customClass="ServiceItemCell" customModule="Wallet" customModuleProvider="target">
+                                <rect key="frame" x="87.5" y="0.0" width="200" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DriverL" translatesAutoresizingMaskIntoConstraints="NO" id="lw5-Ml-fiG">
+                                            <rect key="frame" x="18" y="18" width="164" height="164"/>
+                                        </imageView>
+                                    </subviews>
+                                </view>
+                                <color key="backgroundColor" red="0.96253797743055558" green="0.96419270833333337" blue="0.35956488715277779" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottomMargin" secondItem="lw5-Ml-fiG" secondAttribute="bottom" constant="10" id="S0B-rm-bXf"/>
+                                    <constraint firstItem="lw5-Ml-fiG" firstAttribute="top" secondItem="9du-Pd-P5d" secondAttribute="topMargin" constant="10" id="T55-Rz-JiE"/>
+                                    <constraint firstItem="lw5-Ml-fiG" firstAttribute="leading" secondItem="9du-Pd-P5d" secondAttribute="leadingMargin" constant="10" id="g6A-rv-9gm"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="lw5-Ml-fiG" secondAttribute="trailing" constant="10" id="vnS-0L-oCm"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="serviceImgView" destination="lw5-Ml-fiG" id="h7S-Wq-iqw"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="eka-b9-iT3" id="yCt-f3-cGg"/>
+                            <outlet property="delegate" destination="eka-b9-iT3" id="v5e-9I-mzj"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="EZK-XB-y8X"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Db1-eH-tpe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4576.8000000000002" y="823.53823088455783"/>
+        </scene>
+        <!--N V C for Service List-->
+        <scene sceneID="PFU-qX-xu1">
+            <objects>
+                <navigationController storyboardIdentifier="NVServiceListSB" title="N V C for Service List" automaticallyAdjustsScrollViewInsets="NO" id="oVq-wB-w7d" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="eRA-gA-vIr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="eka-b9-iT3" kind="relationship" relationship="rootViewController" id="zfY-P7-ga9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rdD-ml-3hM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3637.5999999999999" y="823.53823088455783"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="DriverL" width="250" height="100"/>
+        <image name="user" width="128" height="128"/>
+    </resources>
+</document>
